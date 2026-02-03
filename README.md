@@ -13,15 +13,21 @@ This project focuses on solving the scrolling and layout challenge rather than b
 
 ## Demo
 
-### iPhone
-![iPhone](docs/iphone.png)
+<table>
+  <tr>
+    <td><strong>iPhone</strong></td>
+    <td><strong>iPad</strong></td>
+    <td><strong>iPhone (Dark)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="docs/iphone.png" width="260" /></td>
+    <td><img src="docs/ipad-light.png" width="260" /></td>
+    <td><img src="docs/iphone-dark.png" width="260" /></td>
+  </tr>
+</table>
 
-### iPad
-![iPad](docs/ipad-light.png)
-
-You can also watch the screen recording:
-
-▶️ [Demo Video](docs/Demo.mov)
+### Screen recording
+- [Download demo video](docs/Demo.mov)
 
 ---
 
