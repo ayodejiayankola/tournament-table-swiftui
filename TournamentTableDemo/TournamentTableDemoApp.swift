@@ -4,7 +4,7 @@ import SwiftUI
 struct TournamentTableDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            TournamentScreen()
+            ContentView()
         }
     }
 }

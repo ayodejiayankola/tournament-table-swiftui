@@ -236,7 +236,7 @@ struct TournamentTableView: View {
         }
     }
     
-    private func bottomAlignmentFor(_ a: StandingsColumn.ColumnAlignment) -> Alignment {
+    private func bottomAlignmentFor(_ a: StandingsColumn.ContentAlignment) -> Alignment {
         switch a {
         case .leading: return Alignment(horizontal: .leading, vertical: .bottom)
         case .center: return Alignment(horizontal: .center, vertical: .bottom)
@@ -244,7 +244,7 @@ struct TournamentTableView: View {
         }
     }
     
-    private func headerBottomAlignmentFor(_ a: StandingsColumn.ColumnAlignment) -> Alignment {
+    private func headerBottomAlignmentFor(_ a: StandingsColumn.ContentAlignment) -> Alignment {
         switch a {
         case .leading: return .bottomLeading
         case .center: return .bottom

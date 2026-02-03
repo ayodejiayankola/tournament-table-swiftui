@@ -1,10 +1,9 @@
 import SwiftUI
 
-
 struct Hairline: View {
     enum Direction { case horizontal, vertical }
-    var direction: Direction
-    var color: Color = AppTheme.separator
+    let direction: Direction
+    let color: Color
     
     @Environment(\.displayScale) private var displayScale
     private var thickness: CGFloat { 1 / max(displayScale, 1)}

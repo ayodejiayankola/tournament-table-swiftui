@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TournamentScreen: View {
+struct ContentView: View {
     var body: some View {
         TournamentTableView(
             table: SampleData.premierLeagueTable,
@@ -10,5 +10,5 @@ struct TournamentScreen: View {
 }
 
 #Preview {
-    TournamentScreen()
+    ContentView()
 }

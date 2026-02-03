@@ -1,0 +1,9 @@
+# Xcode user files
+xcuserdata/
+*.xcuserstate
+
+# Debugger
+xcdebugger/
+
+# macOS junk
+.DS_Store

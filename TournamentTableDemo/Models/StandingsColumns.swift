@@ -3,10 +3,10 @@ import Foundation
 struct StandingsColumn: Identifiable, Equatable, Hashable {
     let id: String
     let title: String
-    let alignment: ColumnAlignment
+    let alignment: ContentAlignment
     let width: Double
     
-    enum ColumnAlignment: Equatable, Hashable {
+    enum ContentAlignment: Equatable, Hashable {
         case leading
         case center
         case trailing

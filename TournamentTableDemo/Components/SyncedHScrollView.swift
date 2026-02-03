@@ -5,7 +5,7 @@ struct SyncedHScrollView<Content: View>: UIViewRepresentable {
 
     @Binding var offsetX: CGFloat
     var showsIndicators: Bool = true
-    var content: () -> Content
+    let content: () -> Content
 
     init(offsetX: Binding<CGFloat>, showsIndicators: Bool = true, @ViewBuilder content: @escaping () -> Content) {
         self._offsetX = offsetX
@@ -40,8 +40,6 @@ struct SyncedHScrollView<Content: View>: UIViewRepresentable {
             host.view.bottomAnchor.constraint(equalTo: scroll.contentLayoutGuide.bottomAnchor),
             host.view.heightAnchor.constraint(equalTo: scroll.frameLayoutGuide.heightAnchor)
         ])
-
-        context.coordinator.scrollView = scroll
         context.coordinator.hostingController = host
         return scroll
     }
@@ -57,7 +55,6 @@ struct SyncedHScrollView<Content: View>: UIViewRepresentable {
 
     final class Coordinator: NSObject, UIScrollViewDelegate {
         var parent: SyncedHScrollView
-        weak var scrollView: UIScrollView?
         var hostingController: UIHostingController<Content>?
         var programmaticScroll = false
 
